@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ReaderWidget</class>
+ <widget class="QWidget" name="ReaderWidget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>823</width>
+    <height>323</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>ReaderWidget</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <property name="spacing">
+    <number>0</number>
+   </property>
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <widget class="QFrame" name="frame_2">
+       <property name="minimumSize">
+        <size>
+         <width>130</width>
+         <height>60</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>300</width>
+         <height>60</height>
+        </size>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::NoFrame</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Plain</enum>
+       </property>
+       <widget class="QCheckBox" name="checkRead">
+        <property name="geometry">
+         <rect>
+          <x>70</x>
+          <y>36</y>
+          <width>51</width>
+          <height>18</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Read</string>
+        </property>
+       </widget>
+      </widget>
+     </item>
+     <item>
+      <spacer name="horizontalSpacer">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QFrame" name="frame_3">
+       <property name="minimumSize">
+        <size>
+         <width>130</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>200</width>
+         <height>200</height>
+        </size>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::NoFrame</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Raised</enum>
+       </property>
+       <widget class="QPushButton" name="bnWriteToFile">
+        <property name="geometry">
+         <rect>
+          <x>6</x>
+          <y>6</y>
+          <width>111</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Write data to file...</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="bnClearData">
+        <property name="geometry">
+         <rect>
+          <x>6</x>
+          <y>33</y>
+          <width>111</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Clear data</string>
+        </property>
+       </widget>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <widget class="QFrame" name="placeholderFrame">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Sunken</enum>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>checkRead</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>ReaderWidget</receiver>
+   <slot>OnCheckReadToggled()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>33</x>
+     <y>48</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>-3</x>
+     <y>41</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>bnWriteToFile</sender>
+   <signal>pressed()</signal>
+   <receiver>ReaderWidget</receiver>
+   <slot>OnWriteToFilePressed()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>772</x>
+     <y>15</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>831</x>
+     <y>16</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>bnClearData</sender>
+   <signal>pressed()</signal>
+   <receiver>ReaderWidget</receiver>
+   <slot>OnClearDataPressed()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>802</x>
+     <y>47</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>841</x>
+     <y>47</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>OnCheckReadToggled()</slot>
+  <slot>OnWriteToFilePressed()</slot>
+  <slot>OnClearDataPressed()</slot>
+ </slots>
+</ui>

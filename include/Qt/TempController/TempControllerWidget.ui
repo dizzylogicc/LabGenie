@@ -1,0 +1,658 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>TempControllerWidgetClass</class>
+ <widget class="QWidget" name="TempControllerWidgetClass">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1222</width>
+    <height>580</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
+   <property name="spacing">
+    <number>0</number>
+   </property>
+   <item row="0" column="1">
+    <layout class="QHBoxLayout" name="topHlayout">
+     <item>
+      <widget class="QFrame" name="frame_2">
+       <property name="minimumSize">
+        <size>
+         <width>510</width>
+         <height>60</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>300</width>
+         <height>60</height>
+        </size>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::NoFrame</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Plain</enum>
+       </property>
+       <widget class="QCheckBox" name="checkRead">
+        <property name="geometry">
+         <rect>
+          <x>77</x>
+          <y>5</y>
+          <width>71</width>
+          <height>18</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Read</string>
+        </property>
+       </widget>
+       <widget class="QCheckBox" name="checkControl">
+        <property name="geometry">
+         <rect>
+          <x>77</x>
+          <y>37</y>
+          <width>71</width>
+          <height>18</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Control</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="bnSet">
+        <property name="geometry">
+         <rect>
+          <x>134</x>
+          <y>4</y>
+          <width>75</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Set T:</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label">
+        <property name="geometry">
+         <rect>
+          <x>282</x>
+          <y>6</y>
+          <width>21</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>K</string>
+        </property>
+       </widget>
+       <widget class="QCheckBox" name="checkRounded">
+        <property name="geometry">
+         <rect>
+          <x>312</x>
+          <y>4</y>
+          <width>141</width>
+          <height>18</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>With rounded transition</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_8">
+        <property name="geometry">
+         <rect>
+          <x>380</x>
+          <y>34</y>
+          <width>101</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>second transition</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_7">
+        <property name="geometry">
+         <rect>
+          <x>282</x>
+          <y>36</y>
+          <width>21</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>K/s</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_9">
+        <property name="geometry">
+         <rect>
+          <x>147</x>
+          <y>35</y>
+          <width>61</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Ramp rate:</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="editSetpoint">
+        <property name="geometry">
+         <rect>
+          <x>215</x>
+          <y>4</y>
+          <width>61</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="editRampRate">
+        <property name="geometry">
+         <rect>
+          <x>215</x>
+          <y>35</y>
+          <width>61</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="editRadius">
+        <property name="geometry">
+         <rect>
+          <x>312</x>
+          <y>35</y>
+          <width>61</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </widget>
+     </item>
+     <item>
+      <spacer name="horizontalSpacer">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QFrame" name="frame_3">
+       <property name="minimumSize">
+        <size>
+         <width>130</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>200</width>
+         <height>200</height>
+        </size>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::NoFrame</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Raised</enum>
+       </property>
+       <widget class="QPushButton" name="bnWriteToFile">
+        <property name="geometry">
+         <rect>
+          <x>6</x>
+          <y>6</y>
+          <width>111</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Write data to file...</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="bnClearData">
+        <property name="geometry">
+         <rect>
+          <x>6</x>
+          <y>33</y>
+          <width>111</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Clear data</string>
+        </property>
+       </widget>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item row="1" column="0">
+    <layout class="QVBoxLayout" name="verticalLayout" stretch="0,0,0">
+     <property name="spacing">
+      <number>10</number>
+     </property>
+     <property name="leftMargin">
+      <number>9</number>
+     </property>
+     <property name="topMargin">
+      <number>10</number>
+     </property>
+     <property name="rightMargin">
+      <number>9</number>
+     </property>
+     <property name="bottomMargin">
+      <number>0</number>
+     </property>
+     <item>
+      <widget class="QPushButton" name="bnSwitchOffPower">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>185</width>
+         <height>33</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>1000</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="baseSize">
+        <size>
+         <width>0</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>Switch off power</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QGroupBox" name="groupBoxPID">
+       <property name="minimumSize">
+        <size>
+         <width>185</width>
+         <height>200</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>16777215</width>
+         <height>200</height>
+        </size>
+       </property>
+       <property name="title">
+        <string>PID controls</string>
+       </property>
+       <widget class="QPushButton" name="bnSet_4">
+        <property name="geometry">
+         <rect>
+          <x>34</x>
+          <y>171</y>
+          <width>101</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Set PID</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_10">
+        <property name="geometry">
+         <rect>
+          <x>168</x>
+          <y>109</y>
+          <width>16</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>V</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_11">
+        <property name="geometry">
+         <rect>
+          <x>169</x>
+          <y>135</y>
+          <width>16</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>K</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+        </property>
+       </widget>
+       <widget class="QWidget" name="layoutWidget">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>30</y>
+          <width>151</width>
+          <height>145</height>
+         </rect>
+        </property>
+        <layout class="QFormLayout" name="formLayout">
+         <property name="labelAlignment">
+          <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+         </property>
+         <item row="0" column="0">
+          <widget class="QLabel" name="label_2">
+           <property name="text">
+            <string>Proportional:</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="1">
+          <widget class="QLineEdit" name="editProp">
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="0">
+          <widget class="QLabel" name="label_3">
+           <property name="text">
+            <string>Integral:</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="1">
+          <widget class="QLineEdit" name="editIntegral">
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="0">
+          <widget class="QLabel" name="label_4">
+           <property name="text">
+            <string>Derivative:</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="1">
+          <widget class="QLineEdit" name="editDeriv">
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="0">
+          <widget class="QLabel" name="label_5">
+           <property name="text">
+            <string>Max control V:</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="1">
+          <widget class="QLineEdit" name="editMaxV">
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item row="4" column="0">
+          <widget class="QLabel" name="label_6">
+           <property name="text">
+            <string>Max T:</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item row="4" column="1">
+          <widget class="QLineEdit" name="editMaxT">
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </widget>
+     </item>
+     <item>
+      <spacer name="verticalSpacer_3">
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>182</width>
+         <height>73</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+    </layout>
+   </item>
+   <item row="1" column="1">
+    <widget class="QFrame" name="placeholderFrame">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Sunken</enum>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>bnWriteToFile</sender>
+   <signal>pressed()</signal>
+   <receiver>TempControllerWidgetClass</receiver>
+   <slot>OnWriteToFilePressed()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1207</x>
+     <y>17</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>835</x>
+     <y>15</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>bnClearData</sender>
+   <signal>pressed()</signal>
+   <receiver>TempControllerWidgetClass</receiver>
+   <slot>OnClearDataPressed()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1207</x>
+     <y>41</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>844</x>
+     <y>43</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>bnSwitchOffPower</sender>
+   <signal>pressed()</signal>
+   <receiver>TempControllerWidgetClass</receiver>
+   <slot>OnSwitchOffPowerPressed()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>193</x>
+     <y>104</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>907</x>
+     <y>56</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>bnSet_4</sender>
+   <signal>pressed()</signal>
+   <receiver>TempControllerWidgetClass</receiver>
+   <slot>OnSetPIDpressed()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>143</x>
+     <y>306</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>961</x>
+     <y>46</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>bnSet</sender>
+   <signal>pressed()</signal>
+   <receiver>TempControllerWidgetClass</receiver>
+   <slot>OnSetTpressed()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>338</x>
+     <y>24</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>959</x>
+     <y>19</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>checkRead</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>TempControllerWidgetClass</receiver>
+   <slot>OnCheckReadToggled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>281</x>
+     <y>21</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>884</x>
+     <y>30</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>checkControl</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>TempControllerWidgetClass</receiver>
+   <slot>OnCheckControlToggled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>281</x>
+     <y>38</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>949</x>
+     <y>4</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>checkRounded</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>TempControllerWidgetClass</receiver>
+   <slot>OnCheckRoundedToggled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>573</x>
+     <y>10</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>162</x>
+     <y>11</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>OnCheckReadToggled(bool)</slot>
+  <slot>OnCheckControlToggled(bool)</slot>
+  <slot>OnWriteToFilePressed()</slot>
+  <slot>OnClearDataPressed()</slot>
+  <slot>OnSwitchOffPowerPressed()</slot>
+  <slot>OnSetPIDpressed()</slot>
+  <slot>OnSetTpressed()</slot>
+  <slot>OnCheckRoundedToggled(bool)</slot>
+ </slots>
+</ui>

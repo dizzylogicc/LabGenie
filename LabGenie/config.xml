@@ -1,0 +1,108 @@
+<config>
+	<devices>
+	
+		<AnalogReader>
+			<type>NiDaqAnalogReader</type>
+			<NIdeviceName>Dev2</NIdeviceName>
+			<channel>ai1</channel>
+			<mode>RSE</mode>
+			<show>true</show>
+			<screen>ScreenAnalog</screen>
+		</AnalogReader>
+	
+		<HwPhidgets1002>
+			<type>HwPhidgets1002</type>
+			<serial>493703</serial>
+		</HwPhidgets1002>
+		
+		<HwPhidgets1048>
+			<type>HwPhidgets1048</type>
+			<serial>502963</serial>
+		</HwPhidgets1048>
+		
+		<TempReader1>
+			<type>TempReader1048</type>
+			<hardware>HwPhidgets1048</hardware>
+			<channel>0</channel>
+			<tcType>K</tcType>
+			<show>true</show>
+			<screen>ScreenAnalog</screen>
+		</TempReader1>
+		
+		<TempReader2>
+			<type>TempReader1048</type>
+			<hardware>HwPhidgets1048</hardware>
+			<channel>1</channel>
+			<tcType>K</tcType>
+		</TempReader2>
+		
+		<WriterSample>
+			<type>WriterPhidgets1002</type>
+			<hardware>HwPhidgets1002</hardware>
+			<channel>0</channel>
+		</WriterSample>
+		
+		<WriterDoser>
+			<type>WriterPhidgets1002</type>
+			<hardware>HwPhidgets1002</hardware>
+			<channel>1</channel>
+		</WriterDoser>
+		
+		<TempControlSample>
+			<type>TempController</type>
+			<reader>TempReader1</reader>
+			<writer>WriterSample</writer>
+		</TempControlSample>
+		
+		<TempControlDoser>
+			<type>TempController</type>
+			<reader>TempReader2</reader>
+			<writer>WriterDoser</writer>
+			<show>true</show>
+			<screen>ScreenDoser</screen>
+			<screenX>0</screenX>
+			<screenY>0</screenY>
+		</TempControlDoser>
+		
+		<QmsHiden>
+			<type>QmsHidenHAL</type>
+			<show>true</show>
+			<screen>ScreenQms</screen>
+			<screenX>0</screenX>
+			<screenY>0</screenY>
+			<showBox>false</showBox>
+			<boxText>QMS</boxText>
+		</QmsHiden>
+		
+		<Tpd>
+			<type>Tpd</type>
+			<tempControl>TempControlSample</tempControl>
+			<qms>QmsHiden</qms>
+			<show>true</show>
+			<screen>ScreenTpd</screen>
+			<screenX>0</screenX>
+			<screenY>0</screenY>
+		</Tpd>
+		
+	</devices>
+	
+	<screens>
+	
+		<ScreenDoser>
+			<label>Doser temp control</label>
+		</ScreenDoser>
+		
+		<ScreenTpd>
+			<label>Sample TPD</label>
+		</ScreenTpd>
+		
+		<ScreenQms>
+			<label>QMS</label>
+		</ScreenQms>
+		
+		<ScreenAnalog>
+			<label>Analog reader</label>
+		</ScreenAnalog>
+	
+	</screens>
+</config>

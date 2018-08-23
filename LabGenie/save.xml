@@ -1,0 +1,93 @@
+<save>
+	<Hw9211 />
+	<SampleTempReader>
+		<xMax>1.00000e+001</xMax>
+		<xMin>0.00000e+000</xMin>
+		<yMax>6.00000e+002</yMax>
+		<yMin>0.00000e+000</yMin>
+	</SampleTempReader>
+	<DoserTempReader>
+		<xMax>1.00000e+001</xMax>
+		<xMin>0.00000e+000</xMin>
+		<yMax>6.00000e+002</yMax>
+		<yMin>0.00000e+000</yMin>
+	</DoserTempReader>
+	<HwPhidgets1002 />
+	<WriterSample />
+	<WriterDoser />
+	<TempControlSample>
+		<PIDderiv>0.00000e+000</PIDderiv>
+		<PIDintegral>1.00000e-002</PIDintegral>
+		<PIDprop>1.00000e-001</PIDprop>
+		<fRounded>false</fRounded>
+		<maxControlV>5.00000e+000</maxControlV>
+		<maxTemp>1.00000e+003</maxTemp>
+		<radius>2.00000e+000</radius>
+		<rate>2.00000e+000</rate>
+		<setpoint>3.50000e+002</setpoint>
+		<xMax>1.00000e+001</xMax>
+		<xMin>0.00000e+000</xMin>
+		<yMax>9.00000e+000</yMax>
+		<yMin>0.00000e+000</yMin>
+	</TempControlSample>
+	<TempControlDoser>
+		<PIDderiv>0.00000e+000</PIDderiv>
+		<PIDintegral>0.00000e+000</PIDintegral>
+		<PIDprop>0.00000e+000</PIDprop>
+		<fRounded>false</fRounded>
+		<maxControlV>5.00000e+000</maxControlV>
+		<maxTemp>2.80000e+002</maxTemp>
+		<radius>2.00000e+000</radius>
+		<rate>2.00000e+000</rate>
+		<setpoint>2.80000e+002</setpoint>
+		<xMax>1.00000e+002</xMax>
+		<xMin>0.00000e+000</xMin>
+		<yMax>3.20000e+002</yMax>
+		<yMin>2.95000e+002</yMin>
+	</TempControlDoser>
+	<QmsHiden>
+		<detectorType>0</detectorType>
+		<emission>2.00000e+002</emission>
+		<fHidenAutoranging>true</fHidenAutoranging>
+		<filament>1</filament>
+		<hidenCurRange>-7</hidenCurRange>
+		<hidenDwell>100</hidenDwell>
+		<hidenMaxRange>-5</hidenMaxRange>
+		<hidenMinRange>-10</hidenMinRange>
+		<hidenSettleTime>100</hidenSettleTime>
+		<massTable />
+		<opMode>0</opMode>
+		<portString>COM1</portString>
+		<semVoltage>8.00000e+002</semVoltage>
+		<specEnd>5.00000e+001</specEnd>
+		<specMode>0</specMode>
+		<specStart>1.20000e+001</specStart>
+		<specStep>1.00000e-001</specStep>
+	</QmsHiden>
+	<Tpd>
+		<delay>0.00000e+000</delay>
+		<duration>0.00000e+000</duration>
+		<fIsothermal>false</fIsothermal>
+		<folder>C:/Octave</folder>
+		<rate>0.00000e+000</rate>
+		<tempFrom>0.00000e+000</tempFrom>
+		<tempTo>0.00000e+000</tempTo>
+	</Tpd>
+<HwPhidgets1048 />
+<TempReader1>
+		<xMax>3.00000e+002</xMax>
+		<xMin>0.00000e+000</xMin>
+		<yMax>1.00000e+001</yMax>
+		<yMin>-1.00000e+001</yMin>
+	</TempReader1>
+<TempReader2>
+		<xMax>1.00000e+001</xMax>
+		<xMin>0.00000e+000</xMin>
+		<yMax>6.00000e+002</yMax>
+		<yMin>0.00000e+000</yMin>
+	</TempReader2>
+
+<NIwriter />
+
+
+</save>

@@ -1,0 +1,13 @@
+*.sdf
+*.exe
+*.log
+*.tlog
+*.dll
+*.pdb
+*.aps
+*.opensdf
+moc_*.*
+ui_*.*
+Win32/
+LabGenie/Release/
+LabGenie/GeneratedFiles/

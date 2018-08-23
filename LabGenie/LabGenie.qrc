@@ -1,0 +1,5 @@
+<RCC>
+  <qresource prefix="LabGenie">
+    <file>icon.ico</file>
+  </qresource>
+</RCC>
