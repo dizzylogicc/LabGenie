@@ -14,3 +14,4 @@ While proprietary software certainly exists for all these tasks, it is often qui
 * National Instruments data acquisition (DAQ) boards (for analog voltage input and output).
 * Hiden HAL Quadrupole Mass Spectrometer.
 
+Additional description and Windows installers are available from the [project web page](https://dizzylogic.com/labgenie).
