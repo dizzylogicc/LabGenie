@@ -1,1 +1,2 @@
-### LabGenie: a user-configurable environment for lab data acquisition and control
+### Lab Genie
+A user-configurable environment for lab data acquisition and control
