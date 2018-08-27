@@ -1,2 +1,1 @@
-# LabGenie
-Reconfigurable environment for laboratory data acquisition and hardware control
+### LabGenie: a user-configurable environment for lab data acquisition and control
