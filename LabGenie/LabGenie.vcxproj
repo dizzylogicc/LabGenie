@@ -41,7 +41,7 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <OutDir>$(SolutionDir)$(Platform)\$(Configuration)\</OutDir>
-    <IncludePath>$(SolutionDir)include;$(SolutionDir)pugixml\src;C:\Documents\Development\Visual Studio 2013\Projects\serial\include;C:\Documents\Development\Visual Studio 2013\Projects\phidget21-windevel;C:\Qt\5.8\msvc2013\include\QtCharts;$(IncludePath)</IncludePath>
+    <IncludePath>$(SolutionDir)include;$(SolutionDir)pugixml\src;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -601,11 +601,6 @@
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\ui_%(Filename).h;%(Outputs)</Outputs>
       <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\uic.exe" -o ".\GeneratedFiles\ui_%(Filename).h" "%(FullPath)"</Command>
     </CustomBuild>
-  </ItemGroup>
-  <ItemGroup>
-    <Library Include="..\..\..\..\..\Qt\5.8\msvc2013\lib\Qt5Charts.lib" />
-    <Library Include="..\..\..\Visual Studio 2013\Projects\phidget21-windevel\x86\phidget21.lib" />
-    <Library Include="..\..\..\Visual Studio 2013\Projects\serial\serial_32_MD.lib" />
   </ItemGroup>
   <ItemGroup>
     <CustomBuild Include="..\include\Qt\TempController\TempControllerWidget.ui">

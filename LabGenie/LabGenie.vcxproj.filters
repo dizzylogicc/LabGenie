@@ -478,9 +478,4 @@
   <ItemGroup>
     <ResourceCompile Include="LabGenie.rc" />
   </ItemGroup>
-  <ItemGroup>
-    <Library Include="..\..\..\Visual Studio 2013\Projects\phidget21-windevel\x86\phidget21.lib" />
-    <Library Include="..\..\..\Visual Studio 2013\Projects\serial\serial_32_MD.lib" />
-    <Library Include="..\..\..\..\..\Qt\5.8\msvc2013\lib\Qt5Charts.lib" />
-  </ItemGroup>
 </Project>
