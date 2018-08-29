@@ -8,7 +8,7 @@ Anyone who has worked in a modern lab knows that it's unthinkable without comput
 * Running Temperature-Programmed Desorption (TPD) experiments with Hiden HAL QMS
 
 <p align="center">
-  <img src="Doc/Interface_example.png" width="350" title="Lab Genie interface example">
+  <img src="Doc/Interface_example.png" width="550" title="Lab Genie interface example">
 </p>
 
 While proprietary software certainly exists for all these tasks, it is often quite expensive or tied to expensive hardware products. Freely available software, on the other hand, frequently lacks data plotting or saving capabilities. Lab Genie aims to help fill the resulting niche. It can interface with the following types of hardware devices:
