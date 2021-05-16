@@ -19,9 +19,8 @@ While proprietary software certainly exists for all these tasks, it is often qui
 * National Instruments data acquisition (DAQ) boards (for analog voltage input and output).
 * Hiden HAL Quadrupole Mass Spectrometer.
 
-Additional description and Windows installers are available from the [project web page](https://dizzylogic.com/labgenie).
 
-### Getting started
+### Building from source
 
 To compile Lab Genie locally, clone this repository and open the solution file with Visual Studio 2013 or later. In principle it should be possible to compile it on Unix or MacOS using Qt Creator, as there is no Windows-specific code, but it has not been tried. The project has the following dependencies:
 
